@@ -1,2 +1,7 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/^\d{10}$/).joini
+phone_number = ARGV[0]
+if phone_number =~ /\b\d{10}\b/
+ puts phone_number
+else
+ puts ''
+end
